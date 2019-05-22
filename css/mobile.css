@@ -1,0 +1,526 @@
+@charset "UTF-8";
+/* CSS Document */
+@media screen and (max-width: 768px) {
+	/*	display_none*/
+	.page-main {
+/*		display: none;*/
+	}
+	.lang_box {
+/*		display: none;*/
+	}
+	.center_animation {
+		/*		display: none;*/
+	}
+	.pro_main_box {
+		display: none;
+	}
+	.date_serch {
+		display: none;
+	}
+	.skill_container {
+/*		display: none;*/
+	}
+	.web_container{
+/*		display: nons*/
+	}
+	.to_next {
+		display: none;
+	}
+	.second_page {
+		display: none;
+	}
+	.third_page {
+/*		display: none;*/
+	}
+	
+/*scroal_snap none*/
+
+.container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+
+}
+.area {
+  scroll-snap-align:none;
+
+}
+
+	.area_last{
+  scroll-snap-align:none;
+	}
+	
+/*languege*/
+
+.lang_box>img:nth-child(1){
+	width: 8vw;
+	position: absolute;
+	top: 1vh;
+	left: 2vw;
+}
+.lang_box>img:nth-child(2){
+	width: 8vw;
+	position: absolute;
+	top: 1vh;
+	left: 10vw;
+}	
+	
+	/*	center_animation*/
+	
+	
+	.main_text {
+		font-size: 11vw;
+		position: absolute;
+		top: 12vh;
+		left: 23%;
+		z-index: 2;
+		background-color: rgba(255, 255, 255, 1.00);
+	}
+	.center_animation {
+		position: relative;
+	}
+	/*animation*/
+	/*５秒*/
+.star2 {
+  animation: r2 5s linear infinite;
+}
+	
+@keyframes r2 {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+/*２秒*/
+.star3 {
+  animation: r3 2s linear infinite;
+}
+ 
+@keyframes r3 {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+/*2.5秒*/
+.star5 {
+  animation: r5 2.5s linear infinite;
+}
+ 
+@keyframes r5 {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+/*5秒*/
+/*右回転*/
+.star1 {
+  animation: r1 5s linear infinite;
+}
+ 
+@keyframes r1 {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*3秒*/
+/*右回転*/
+.star4 {
+  animation: r4 3s linear infinite;
+}
+ 
+@keyframes r4 {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+	/*mark*/
+	.mark1 {
+		width: 24vw;
+		position: absolute;
+		top: 10vh;
+		left: 56%;
+	}
+	.mark2 {
+		width: 20vw;
+		position: absolute;
+		top: 11vh;
+		left: 58%;
+	}
+	.mark3 {
+		width: 28vw;
+		position: absolute;
+		top: 9vh;
+		left: 54.5%;
+	}
+	.mark4 {
+		width: 32vw;
+		position: absolute;
+		top: 8vh;
+		left: 53%;
+	}
+
+	
+	/*page_side*/
+
+.aside_box>img:nth-child(1){
+    position: absolute;
+    left: 37.5%;
+    top: 30px;
+    width: 45%;
+}
+
+.aside_box>img:nth-child(2){
+	width: 250px;
+    position: absolute;
+	top: 260px;
+	animation: neonBlash 16s infinite;
+}
+
+.aside_box >.sub_font{
+	position: absolute;
+	left: 45%;
+	top: 270px;
+	font-size: 2.5rem;
+	color: rgba(255,255,255,1.00);
+}
+
+.aside_box >.main_font{
+	position: absolute;
+	font-size: 2.2vh;
+	color: rgba(255,255,255,1.00);
+	word-wrap: break-word;
+	width: 245px;
+	top: 320px;
+	left: 25%
+	
+}
+
+/**********************/
+.page-main {
+    position: relative;
+}
+
+.page-main > aside {
+    background-color: rgba(0,0,0,0.8);
+    width: 350px;
+    height: 100%;
+    top: 0;
+    left: -350px;
+    position: fixed;
+	z-index: 3;
+}
+
+.page-main > aside ul {
+    margin: 0;
+    padding: 0;
+    top: 50px;
+    left: 114px;
+    position: absolute;
+}
+
+.page-main > aside li {
+    margin: 0 0 20px;
+    list-style: none;
+}
+
+.page-main > aside button {
+    background-color: rgba(0,0,0,0.8);
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    width: 42px;
+    height: 108px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.page-main > aside button > img {
+	  animation: neonBlink 4s infinite;
+}
+
+/*sub title	*/
+
+.ab_box{
+	position: relative;
+}
+.ab_box >img{
+    width: 54%;
+    position: absolute;
+    top: 45vh;
+    left: 13vw;
+	animation: neonBlash 16s infinite;
+}
+
+.ab_box > p{
+    font-size: 8.5vw;
+    position: absolute;
+    top: 39vh;
+    left: 33vw;
+}
+	
+	.unity_box{
+		top: 60vh;
+	}
+	
+/*WEB*/
+.web_container>ul{
+	position: relative;
+}
+
+.web_container>ul>li:nth-child(1){
+	position: absolute;
+	top: 54vh;
+    left: 8.5vw;
+	
+}
+
+
+.web_container>ul>li:nth-child(2){
+/*
+	position: absolute;
+	top: 17vh;
+    left: 40.5vw;
+*/
+		position: absolute;
+	top: 54vh;
+    left: 8.5vw;
+}
+.web_container>ul>li:nth-child(3){
+/*
+	position: absolute;
+	top: 14vh;
+    left: 69vw;
+*/
+	
+	position: absolute;
+	top: 54vh;
+    left: 8.5vw;
+}
+
+.web_container>ul>li>div:nth-child(1){
+	position: relative;
+}
+.web_container >ul >li>div>img:nth-child(1){
+	width: 84vw;
+	 animation: neonBlink 4s infinite;
+	
+}
+	
+	#work01_u>div>img:nth-child(1){
+		 animation: neonBlink 2s infinite;
+	}
+.web_container >ul >li>div>img:nth-child(2){
+    width: 39vw;
+    position: absolute;
+     top: 23%;
+    left: 44%;	
+
+}
+	.movie_img{
+		    width: 39vw;
+    position: absolute;
+     top: 23%;
+    left: 44%;	
+	}
+
+.link{
+	position: absolute;
+    top: 75%;
+    left: 10%;
+	font-size: 4.5vw;
+}
+.link>a>img{
+    width: 6vw;
+    transform: rotate;
+    transform: rotate(30deg);
+	padding: 2vw;
+}
+
+/*label*/
+
+.hidden_box {
+	position: absolute;
+	top: 6%;
+    left: 16%;
+	
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+    padding:  0px 17px 0px 17px;
+    font-weight: bold;
+    background: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 4vw;
+}
+
+/*アイコンを表示*/
+.hidden_box label:before {
+    display: inline-block;
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    padding-right: 5px;
+    transition: 0.2s;
+	color: rgba(255,0,127,1.00);
+}
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: rgba(255,255,255,0.00);
+}
+
+/*アイコンを切り替え*/
+.hidden_box input:checked ~ label:before {
+     content: '\f00d';
+     -ms-transform: rotate(360deg);
+     -webkit-transform: rotate(360deg);
+     transform: rotate(360deg);
+     color: rgba(0,0,0,1.00);
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    opacity: 1;
+    background: rgba(255,255,255,0.9);
+    width: 66vw;
+    height: 17.5vh;
+	position: relative;
+}
+.hidden_show >p:nth-child(1){
+	font-size: 4vw;
+}
+.hidden_show >.main_font{
+    margin: 1vh 1vw 1vh 1vw;
+    font-size: 1rem;
+    word-wrap: break-word;
+    width: 63vw;
+	overflow: scroll;
+	height: 9vh;
+}
+.hidden_show > img{
+	position: absolute;
+	    width: 19vw;
+}
+
+.hidden_show >ul{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	font-size: 3vw;
+}
+.hidden_show>li{
+	width: 20%;
+}
+
+.hidden_show >ul>li>i{
+	    padding-right: 0.3vw;
+}
+
+.db_text{
+    font-size: 2vw;
+    text-align: right;
+    padding-right: 2vw;
+}
+
+.db_text>span{
+	padding: 0 0 0 1.2vw;
+}
+
+
+/*tabs	*/
+	
+	.work-section .tabs-nav a:hover,
+	.work-section .tabs-nav a.active{
+		color: rgba(0,255,255,1.00);
+	}
+	
+	.work-section{
+		position: relative;
+	}
+	
+	.unity_subbox{
+		position: relative;
+		top: 60vh;
+	}
+	
+	.section-header{
+	position: absolute;
+    top: 90vh;
+	left: 50%;
+    transform: translate(-50%,-50%);
+	}
+	
+	.tabs-nav{
+		display: flex;
+
+	}
+	
+	.tabs-nav>li{
+	margin: 10px;
+			
+	}
+	
+	.tabs-nav>li:nth-child(1){
+		animation: neonBlink 4s infinite;
+	}
+	
+		.tabs-nav>li:nth-child(2){
+		animation: neonBlink 1s infinite;
+	}
+	
+			.tabs-nav>li:nth-child(3){
+		animation: neonBlink 3s infinite;
+	}
+	
+	/*footer*/
+
+.footer_box{
+	position: relative;
+	top: 60vh;
+	
+}
+
+.footer_box>img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   width: 295px;
+	animation: neonBlash 16s infinite;
+}
+
+.btn_link{
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 4vh;
+	margin-top: 5vh;;
+	display: flex;
+}
+
+.btn_link>a{
+	margin: 1vw;
+}
+
+.copylight{
+	position: absolute;
+	 left: 50%;
+    transform: translate(-50%,-50%);
+	top: 20vh;
+	    font-size: 3.2vw;
+}
+
+}

@@ -1,0 +1,411 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*
+ * インフォグラフィック
+ */
+.ability_text{
+	font-size: 2vw;
+    padding-top: 2vh;
+}
+
+.scene {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.skill_container {
+    display: flex;
+/*    justify-content: space-around;*/
+}
+
+.chart {
+position: relative;
+    margin: 10px 15px 10px 15px;
+    width: 180px;
+    height: 180px;
+    top: 70vh;
+    left: 2vw;
+}
+.circle-mask-outer, .circle-mask-inner {
+    overflow: hidden;
+    position: absolute;
+    width: 90px;
+    height: 180px;
+}
+.circle-mask-outer.left {
+    left: 0;
+}
+.circle-mask-outer.right {
+    right: 0;
+}
+.circle-mask-outer.left .circle-mask-inner {
+    left: 100%;
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+}
+.circle-mask-outer.right .circle-mask-inner {
+    right: 100%;
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.circle-body {
+    border-radius: 100%;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+}
+.circle-mask-outer.left .circle-body {
+    right: 0;
+}
+.circle-mask-outer.right .circle-body {
+    left: 0;
+}
+.percent-symbol {
+    color: black;
+}
+
+/*/////インフォ装飾////*/
+.chart-content {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 150px;
+    height: 120px;
+    background-color: rgba(255,255,255,1.00);
+    border-radius: 100%;
+    padding-top: 30px;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+/*    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
+/*    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
+animation: neonBlash 16s infinite;
+}
+
+.chart-content .text {
+    line-height: 1;
+    position: relative;
+}
+.chart-content .percent-number {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: black;
+}
+.chart-content .percent-symbol {
+    font-size: 1.5vw;
+}
+
+/**************************************/
+.no-borderradius .circle-mask-outer, .no-csstransforms .circle-mask-outer {
+    display: none;
+}
+.no-borderradius .chart-content, .no-csstransforms .chart-content {
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 180px;
+    padding-top: 60px;
+    background: url(../img/chart-bg.png) no-repeat 0 0;
+}
+.no-borderradius #sunshine .chart-content, .no-csstransforms #sunshine .chart-content {
+    background-position: -240px 0;
+}
+.no-borderradius #birds .chart-content, .no-csstransforms #birds .chart-content {
+    background-position: -480px 0;
+}
+.no-borderradius #woods .chart-content, .no-csstransforms #woods .chart-content {
+    background-position: -720px 0;
+}
+
+/**************************************/
+
+#ab_1 .circle-body {
+    background-color: rgba(0,255,255,1.00);
+
+	   animation: neonBlink 5s infinite;
+}
+#ab_2 .circle-body {
+    background-color: rgba(0,255,255,1.00);
+		
+	   animation: neonBlink 4s infinite;
+}
+#ab_3 .circle-body {
+    background-color: rgba(229,78,78,1.00);
+}
+
+@media screen and (max-width: 768px) {
+	.ability_text{
+	font-size: 2vw;
+    padding-top: 2vh;
+		display: none;
+}
+
+.scene {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.skill_container {
+    display: inherit;
+/*    justify-content: space-around;*/
+}
+
+#ab_1 {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: 36vh;
+    left: 68vw;
+    margin: 0px;
+}
+	
+#ab_2 {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: 83vh;
+    left: 68vw;
+    margin: 0px;
+}
+@media screen and (max-width: 320px) {
+	
+	#ab_2{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: 80vh;
+    left: 68vw;
+    margin: 0px;
+	}
+	}
+	
+@media screen and (min-width: 414px) {
+	
+	#ab_2{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: 85vh;
+    left: 68vw;
+    margin: 0px;
+	}
+	}
+	
+@media screen and (min-width: 375px) {
+	
+	#ab_2{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: 83vh;
+    left: 68vw;
+    margin: 0px;
+	}
+	}
+	
+	@media screen and (min-width: 411px) {
+	
+	#ab_2{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: 86vh;
+    left: 68vw;
+    margin: 0px;
+	}
+	}
+.circle-mask-outer, .circle-mask-inner {
+    overflow: hidden;
+    position: absolute;
+    width: 45px;
+    height: 90px;
+}
+.circle-mask-outer.left {
+    left: 0;
+}
+.circle-mask-outer.right {
+    right: 0;
+}
+.circle-mask-outer.left .circle-mask-inner {
+    left: 100%;
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+}
+.circle-mask-outer.right .circle-mask-inner {
+    right: 100%;
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.circle-body {
+    border-radius: 100%;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+}
+.circle-mask-outer.left .circle-body {
+    right: 0;
+}
+.circle-mask-outer.right .circle-body {
+    left: 0;
+}
+.percent-symbol {
+    color: black;
+}
+
+/*/////インフォ装飾////*/
+.chart-content {
+    position: absolute;
+    left: 7.5px;
+    top: 7.5px;
+    width: 75px;
+    height: 60px;
+    background-color: rgba(255,255,255,1.00);
+    border-radius: 100%;
+    padding-top: 15px;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+/*    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
+/*    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
+animation: neonBlash 16s infinite;
+}
+
+.chart-content .text {
+    line-height: 1;
+    position: relative;
+	top: 12px;
+}
+.chart-content .percent-number {
+    font-size: 4.5vw;
+    font-weight: bold;
+    color: black;
+}
+.chart-content .percent-symbol {
+    font-size: 3.5vw;
+}
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+		.ability_text{
+	font-size: 3vw;
+    padding-top: 3vh;
+		display: none;
+}
+
+.scene {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.skill_container {
+    display: inherit;
+/*    justify-content: space-around;*/
+}
+
+#ab_1 {
+    position: relative;
+    width: 202.5px;
+    height: 202.5px;
+    top: 36vh;
+    left: 70vw;
+    margin: 0px;
+}
+	
+#ab_2 {
+    position: relative;
+    width: 202.5px;
+    height: 202.5px;
+    top: 87vh;
+    left: 70vw;
+    margin: 0px;
+}
+	
+@media screen and (min-width: 1024px) {
+	
+	#ab_2{
+    position: relative;
+    width: 202.5px;
+    height: 202.5px;
+    top: 92vh;
+    left: 70vw;
+    margin: 0px;
+	}
+	}
+.circle-mask-outer, .circle-mask-inner {
+    overflow: hidden;
+    position: absolute;
+    width: 101.25px;
+    height: 202.5px;
+}
+.circle-mask-outer.left {
+    left: 0;
+}
+.circle-mask-outer.right {
+    right: 0;
+}
+.circle-mask-outer.left .circle-mask-inner {
+    left: 100%;
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+}
+.circle-mask-outer.right .circle-mask-inner {
+    right: 100%;
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.circle-body {
+    border-radius: 100%;
+    position: absolute;
+    width: 202.5px;
+    height: 202.5px;
+}
+.circle-mask-outer.left .circle-body {
+    right: 0;
+}
+.circle-mask-outer.right .circle-body {
+    left: 0;
+}
+.percent-symbol {
+    color: black;
+}
+
+/*/////インフォ装飾////*/
+.chart-content {
+    position: absolute;
+    left: 17.025px;
+    top: 17.025px;
+    width: 168.75px;
+    height: 135px;
+    background-color: rgba(255,255,255,1.00);
+    border-radius: 100%;
+    padding-top: 33.75px;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+/*    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
+/*    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
+animation: neonBlash 16s infinite;
+}
+
+.chart-content .text {
+    line-height: 1;
+    position: relative;
+	top: 27px;
+}
+.chart-content .percent-number {
+    font-size: 4.5vw;
+    font-weight: bold;
+    color: black;
+}
+.chart-content .percent-symbol {
+    font-size: 3.5vw;
+}	
+	
+}

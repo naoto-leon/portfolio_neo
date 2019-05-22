@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/**/
+/*page-load*/
+
+/*page-load*/
+
+/****************************************/
+
+/* ブラウザのスクロールバーを常に表示させることでカクカクッとなるのを防ぐ */
+html{
+  overflow-y:scroll;
+}
+ 
+/* ローディング関係ない部分のCSS */
+.button{
+  background:rgba(255,255,255,1.00);
+  border:1px solid #222;
+  border-radius:5px;
+  color:#fff;
+  display:block;
+  height:60px;
+  line-height:60px;
+  margin:30px auto;
+  text-align:center;
+  width:600px;
+}
+.button:hover{
+  background:#fff;
+  color:#222;
+}
+img{
+  max-width:100%;
+}
+ 
+
+
+
+/* ローディングの背景部分のCSS */
+.loader{
+  background-color: rgba(255,255,255,1.00);
+  height:100%;
+  left:0;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:99999;
+}
+ 
+/* ローディングのアニメーション部分のCSS (https://projects.lukehaas.me/css-loaders/) */
+.loader-animation,
+.loader-animation:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader-animation {
+  margin: 280px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 0.9em solid rgba(0,255,255,1.00);
+  border-right: 0.9em solid rgba(0,255,255,0);
+  border-bottom: 0.9em solid rgba(0,255,255,0);
+  border-left: 0.9em solid rgba(0,255,255,1);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+	   
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+	  
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+	 
+  }
+}
+
+
+/*load second*/
+
+.loader-second-animation,
+.loader-second-animation:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader-second-animation {
+margin: -420px auto;
+    font-size: 15px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 0.6em solid rgba(0,255,255,1);
+    border-right: 0.6em solid rgba(0,255,255,1.00);
+    border-bottom: 0.6em solid rgba(0,255,255,1.00);
+    border-left: 0.6em solid rgba(0,25,255,0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load9 1.1s infinite linear;
+    animation: load9 1.1s infinite linear;
+}
+@-webkit-keyframes load9 {
+  0% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes load9 {
+  0% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+/*load third*/
+
+.loader-third-animation,
+.loader-third-animation:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader-third-animation {
+margin: 230px auto;
+    font-size: 19px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 0.5em solid rgba(0,255,255,0);
+    border-right: 0.5em solid rgba(0,255,255,1);
+    border-bottom: 0.5em solid rgba(0,255,255,0);
+    border-left: 0.5em solid rgba(0,25,255,0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load10 1.1s infinite linear;
+    animation: load10 1.1s infinite linear;
+}
+@-webkit-keyframes load10 {
+  0% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load10 {
+  0% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
