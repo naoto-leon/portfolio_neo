@@ -8,7 +8,7 @@ html {
 	-webkit-overflow-scrolling: touch;
 }
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(17, 17, 17);
     color: rgb(0, 0, 0);
     font-size: 1.6rem;
 	margin: 0px;
@@ -59,7 +59,7 @@ font-style: normal;
 	font-family: vdl-megamaru, sans-serif;
 font-weight: 400;
 font-style: normal;
-	
+	color: rgba(244,244,239,1.00);
 }
 
 /*colore*/
@@ -186,7 +186,8 @@ font-size: 9vw;
     top: 25vh;
     left: 32%;
     z-index: 2;
-    background-color:rgba(255,255,255,1.00);
+    background-color:rgba(17,17,17,1.00);
+	color: rgba(244,244,239,1.00);
 }
 .main_text>span{
 /*	color: rgba(0,255,255,1.00);*/
@@ -587,6 +588,7 @@ position: absolute;
 	 left: 50%;
     transform: translate(-50%,-50%);
 	top: 20vh;
+	color: rgba(244,244,239,1.00);
 }
 
 
@@ -604,7 +606,7 @@ position: absolute;
 .hidden_box label {
     padding:  0px 17px 0px 17px;
     font-weight: bold;
-    background: rgba(255,255,255,0.5);
+/*    background: rgba(255,255,255,0.5);*/
     border-radius: 5px;
     cursor: pointer;
     transition: .5s;
@@ -631,7 +633,7 @@ position: absolute;
      -ms-transform: rotate(360deg);
      -webkit-transform: rotate(360deg);
      transform: rotate(360deg);
-     color: rgba(0,0,0,1.00);
+     color: rgba(244,244,239,1.00);
 }
 
 /*チェックは見えなくする*/
@@ -652,7 +654,7 @@ position: absolute;
 .hidden_box input:checked ~ .hidden_show {
     padding: 10px 0;
     opacity: 1;
-    background: rgba(255,255,255,0.9);
+    background: rgba(17,17,17,0.9);
     width: 19vw;
     height: 16vh;
 	position: relative;
@@ -667,6 +669,7 @@ position: absolute;
 	    width: 17vw;
 	    height: 6vh;
     overflow: scroll;
+	color: rgba(244,244,239,1.00);
 }
 .hidden_show > img{
 	position: absolute;
@@ -727,7 +730,7 @@ position: absolute;
 }
 
 .btn-social-circle--twitter {
-background: rgba(0,255,255,1.00);
+ background: rgba(127,0,255,1);
 border: solid 5px rgba(255,255,255,0.5);
 }
 
@@ -737,7 +740,7 @@ border: solid 5px rgba(255,255,255,0.5);
 }
 
 .btn-social-circle--pocket {
-  background: rgba(255,0,127,1.00);
+ background: rgba(127,0,255,1);
   border: solid 5px rgba(255,255,255,0.5);
 }
 

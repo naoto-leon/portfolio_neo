@@ -73,7 +73,7 @@
 		top: 12vh;
 		left: 23%;
 		z-index: 2;
-		background-color: rgba(255, 255, 255, 1.00);
+		background-color: rgba(17, 17, 17, 1.00);
 	}
 	.center_animation {
 		position: relative;
@@ -345,7 +345,6 @@
 .hidden_box label {
     padding:  0px 17px 0px 17px;
     font-weight: bold;
-    background: rgba(255,255,255,0.5);
     border-radius: 5px;
     cursor: pointer;
     transition: .5s;
@@ -372,7 +371,7 @@
      -ms-transform: rotate(360deg);
      -webkit-transform: rotate(360deg);
      transform: rotate(360deg);
-     color: rgba(0,0,0,1.00);
+     color: rgba(244,244,239,1.00);
 }
 
 /*チェックは見えなくする*/
@@ -393,7 +392,7 @@
 .hidden_box input:checked ~ .hidden_show {
     padding: 10px 0;
     opacity: 1;
-    background: rgba(255,255,255,0.9);
+    background: rgba(17,17,17,0.9);
     width: 66vw;
     height: 17.5vh;
 	position: relative;

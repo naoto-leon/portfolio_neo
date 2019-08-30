@@ -8,6 +8,7 @@
 .ability_text{
 	font-size: 2vw;
     padding-top: 2vh;
+	color: rgba(244,244,239,1.00);
 }
 
 .scene {
@@ -66,7 +67,7 @@ position: relative;
     left: 0;
 }
 .percent-symbol {
-    color: black;
+   color: rgba(244,244,239,1.00);
 }
 
 /*/////インフォ装飾////*/
@@ -76,7 +77,7 @@ position: relative;
     top: 15px;
     width: 150px;
     height: 120px;
-    background-color: rgba(255,255,255,1.00);
+    background-color: rgba(17,17,17,1.00);
     border-radius: 100%;
     padding-top: 30px;
     text-align: center;
@@ -89,11 +90,12 @@ animation: neonBlash 16s infinite;
 .chart-content .text {
     line-height: 1;
     position: relative;
+	 
 }
 .chart-content .percent-number {
     font-size: 1.5vw;
     font-weight: bold;
-    color: black;
+    color: rgba(244,244,239,1.00);
 }
 .chart-content .percent-symbol {
     font-size: 1.5vw;
@@ -256,7 +258,7 @@ animation: neonBlash 16s infinite;
     left: 0;
 }
 .percent-symbol {
-    color: black;
+    color: rgba(244,244,239,1.00);
 }
 
 /*/////インフォ装飾////*/
@@ -266,7 +268,7 @@ animation: neonBlash 16s infinite;
     top: 7.5px;
     width: 75px;
     height: 60px;
-    background-color: rgba(255,255,255,1.00);
+    background-color: rgba(17,17,17,1.00);
     border-radius: 100%;
     padding-top: 15px;
     text-align: center;
@@ -284,7 +286,7 @@ animation: neonBlash 16s infinite;
 .chart-content .percent-number {
     font-size: 4.5vw;
     font-weight: bold;
-    color: black;
+    color: rgba(244,244,239,1.00);
 }
 .chart-content .percent-symbol {
     font-size: 3.5vw;
