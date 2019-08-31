@@ -181,13 +181,14 @@ font-style: normal;
 
 /*Top*/
 .main_text{
-font-size: 9vw;
+/*font-size: 9vw;*/
     position: absolute;
     top: 25vh;
-    left: 32%;
+    left: 30%;
+	right: 25%;
     z-index: 2;
-    background-color:rgba(17,17,17,1.00);
-	color: rgba(244,244,239,1.00);
+/*    background-color:rgba(17,17,17,1.00);*/
+/*	color: rgba(244,244,239,1.00);*/
 }
 .main_text>span{
 /*	color: rgba(0,255,255,1.00);*/

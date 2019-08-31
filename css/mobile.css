@@ -71,9 +71,10 @@
 		font-size: 11vw;
 		position: absolute;
 		top: 12vh;
-		left: 23%;
+		left: 21%;
+		right: 25%;
 		z-index: 2;
-		background-color: rgba(17, 17, 17, 1.00);
+/*		background-color: rgba(17, 17, 17, 1.00);*/
 	}
 	.center_animation {
 		position: relative;
