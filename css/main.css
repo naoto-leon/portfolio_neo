@@ -38,6 +38,23 @@ img {
     height: auto;
 }
 
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+position: relative;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(17, 17, 17);
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 768px) {
 	
 	.mobile_ab_box{
@@ -344,6 +361,7 @@ position: relative;
     top: 57%;
     right: 16%;
     font-size: 1vw;
+	z-index: 999;
 }
 
 .main_pro_box>p:nth-child(8){
@@ -359,6 +377,7 @@ position: relative;
     position: absolute;
     top: 25%;
     left: 12%;
+	z-index: 999;
 }
 
 /*date_serch*/
@@ -399,12 +418,14 @@ width: 10vw;
 	position: absolute;
 	top: 1vh;
 	left: 10px;
+	z-index: 999;
 }
 .lang_2{
 	width: 50px;
 	position: absolute;
 	top: 1vh;
 	left: 60px;
+	z-index: 999;
 }
 
 /*to_next*/
